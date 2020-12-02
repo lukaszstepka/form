@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
     <title>Formularz nauka</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <h1>Form taki do zbierania informacji</h1>
+    <form class="form">
+      <label for="imie"
+        >Imię
+        <input name="imie" id="imie" type="text" />
+      </label>
+      <p>
+        <label for="nazwisko">Nazwisko</label>
+        <input id="nazwisko" name="nazwisko" type="text" />
+      </p>
+      <label for="wiek"
+        >Wiek:
+        <input id="wiek" name="wiek" type="number" />
+      </label>
+     <p><label for="adres"
+        >Twój adres:
+        <input class="form--item"
+          id="adres"
+          name="adres"
+          type="text"
+          placeholder="miasto ulica numer domu,mieszkania"
+        />
+      </label></p>
+      <p><label for="phone">Telefon: 
+        <input id="phone" type="phone" name="phone" placeholder="bez kierunkowego i zera">
+      </label></p>
+
+    </form>
+  </body>
 </html>
