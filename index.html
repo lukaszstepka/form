@@ -9,21 +9,27 @@
   </head>
   <body>
     <h1>Form - taki do zbierania informacji</h1>
+
+    <form class="form" method="post" action="https://dev.cotenfrontend.pl">
     <fieldset class="form--fieldset">
       <legend>Podstawowe dane</legend>
-      <form class="form">
-        <label for="imie"
+      <p class="form"> 
+      <label for="imie"
           >Imię
           <input name="imie" id="imie" type="text" />
         </label>
+      </p>
         <p class="form">
           <label for="nazwisko">Nazwisko</label>
           <input id="nazwisko" name="nazwisko" type="text" />
         </p>
-        <label for="wiek"
+        <p class="form">
+          <label for="wiek"
           >Wiek:
           <input id="wiek" name="wiek" type="number" />
         </label>
+        </p>
+        
        <p class="form"><label for="adres"
           >Twój adres:
           <input class="form--item"
@@ -51,16 +57,20 @@
     <fieldset class="form--fieldset">
       <legend>Pozostałe pola</legend>
       <p class="form"><label for="18-nastka">Ustaw rozmiar opon  <input type="range" min="14" max="22" id="18-nastka" name="18-nastka"></label></p>
+      
+      <textarea class="form form--textarea" placeholder="uwagi co do zamówienia"></textarea>
     </fieldset>
     <fieldset class="form--fieldset">
       <legend>Listy wyboru</legend>
-      <select class="form">
+      <p class="form">
+      <select>
         <option>Ogrzewana przednia szyba</option>
         <option>Ogrzewana tylna szyba</option>
         <option>Ogrzewane lusterka</option>
         <option>Ogrzewana kierownica</option>
         <option>Ogrzewane lusterka</option>
       </select>
+      </p>
     </fieldset>
     <fieldset class="form--fieldset">
       <legend>Regulamin</legend>
@@ -68,6 +78,7 @@
         <label for="reg">Oświadczam ze.... </label><input id="reg" name="reg" type="checkbox">
       </p>
     </fieldset>
+    <p><input type='submit' class="form--button" value="Zamów"></p>
 
   </form>
   </body>

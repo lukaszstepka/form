@@ -3,8 +3,9 @@ body {
   margin-right: auto;
   text-align: center;
   width: 50%;
-  background-color: rgb(253, 232, 204);
+  background-color: #F7FFDD;
   font-family: monospace;
+  color: #DBA159;
 }
 .form {
   text-align: center;
@@ -14,5 +15,22 @@ body {
 }
 .form--fieldset{
     text-align: left;
-    background-color: rgb(252, 209, 157);
+    background-color: #FCFDAF;
+    font-size: 115%;
+    border-radius: 1%;
+    border-color: #D0E3CC;
+}
+.form--button{
+    font-size: 140%;
+    color: #DBA159;
+    background-color: #FCFDAF;
+    width: 30%;
+    padding:16px;
+    border-radius: 40%;
+}
+.form--textarea{
+    width: 80%;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
