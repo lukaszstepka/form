@@ -8,33 +8,67 @@
     <title>Formularz nauka</title>
   </head>
   <body>
-    <h1>Form taki do zbierania informacji</h1>
-    <form class="form">
-      <label for="imie"
-        >Imię
-        <input name="imie" id="imie" type="text" />
-      </label>
-      <p>
-        <label for="nazwisko">Nazwisko</label>
-        <input id="nazwisko" name="nazwisko" type="text" />
+    <h1>Form - taki do zbierania informacji</h1>
+    <fieldset class="form--fieldset">
+      <legend>Podstawowe dane</legend>
+      <form class="form">
+        <label for="imie"
+          >Imię
+          <input name="imie" id="imie" type="text" />
+        </label>
+        <p class="form">
+          <label for="nazwisko">Nazwisko</label>
+          <input id="nazwisko" name="nazwisko" type="text" />
+        </p>
+        <label for="wiek"
+          >Wiek:
+          <input id="wiek" name="wiek" type="number" />
+        </label>
+       <p class="form"><label for="adres"
+          >Twój adres:
+          <input class="form--item"
+            id="adres"
+            name="adres"
+            type="text"
+            placeholder="miasto ulica numer domu"
+          />
+    </fieldset>
+    <fieldset class="form--fieldset">
+      <legend>Dane kontaktowe: </legend>
+    <p class="form"><label for="phone">Telefon: 
+      <input id="phone" type="phone" name="telefon" placeholder="bez kierunkowego i zera">
+    </label></p>
+    <p class="form"><label for="email">E-mail<input type="email" id="email" name="email"></label></p>
+    </fieldset>
+    <fieldset class="form--fieldset">
+      <legend>Marka auta</legend>
+        <p class="form"><label for="ford">Ford<input type="radio" id="ford" name="phone"></label></p>
+        <p class="form"><label for="mitsubishi">Mitsubishi<input type="radio" id="mitsubishi" name="phone"></label></p>
+        <p class="form"><label for="audi">Audi<input type="radio" id="audi" name="phone"></label></p>
+        <p class="form"><label for="peugeot">Peugeot<input type="radio" id="peugeot" name="phone"></label></p>
+        <p class="form"><label for="mustang">Mustang<input type="radio" id="mustang" name="phone"></label></p>
+    </fieldset>
+    <fieldset class="form--fieldset">
+      <legend>Pozostałe pola</legend>
+      <p class="form"><label for="18-nastka">Ustaw rozmiar opon  <input type="range" min="14" max="22" id="18-nastka" name="18-nastka"></label></p>
+    </fieldset>
+    <fieldset class="form--fieldset">
+      <legend>Listy wyboru</legend>
+      <select class="form">
+        <option>Ogrzewana przednia szyba</option>
+        <option>Ogrzewana tylna szyba</option>
+        <option>Ogrzewane lusterka</option>
+        <option>Ogrzewana kierownica</option>
+        <option>Ogrzewane lusterka</option>
+      </select>
+    </fieldset>
+    <fieldset class="form--fieldset">
+      <legend>Regulamin</legend>
+      <p class="form">
+        <label for="reg">Oświadczam ze.... </label><input id="reg" name="reg" type="checkbox">
       </p>
-      <label for="wiek"
-        >Wiek:
-        <input id="wiek" name="wiek" type="number" />
-      </label>
-     <p><label for="adres"
-        >Twój adres:
-        <input class="form--item"
-          id="adres"
-          name="adres"
-          type="text"
-          placeholder="miasto ulica numer domu,mieszkania"
-        />
-      </label></p>
-      <p><label for="phone">Telefon: 
-        <input id="phone" type="phone" name="phone" placeholder="bez kierunkowego i zera">
-      </label></p>
+    </fieldset>
 
-    </form>
+  </form>
   </body>
 </html>

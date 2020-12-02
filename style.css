@@ -2,19 +2,17 @@ body {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  width: 100%;
+  width: 50%;
   background-color: rgb(253, 232, 204);
   font-family: monospace;
 }
 .form {
-  width: 100vh;
   text-align: center;
-  background-color: rgb(252, 209, 157);
   padding: 16px;
   margin-left: auto;
   margin-right: auto;
 }
-.form--item {
-  width: 250px;
-  width: 100%;
+.form--fieldset{
+    text-align: left;
+    background-color: rgb(252, 209, 157);
 }
